@@ -97,7 +97,14 @@ npm i -g npm@latest pm2 nodemon license gitignore dockerignore typescript commit
 - docker-compose --version
 ```
 
-9. Install MongoDB
+9. Install MySQL
+```bash
+- sudo apt-get update -y
+- sudo apt-get install mysql-server -y
+- sudo mysql_secure_installation
+```
+
+10. Install MongoDB
 
 ```bash
 - wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
@@ -112,7 +119,7 @@ npm i -g npm@latest pm2 nodemon license gitignore dockerignore typescript commit
 
 ```
 
-10. Install PostgreSQL
+12. Install PostgreSQL
 
 ```bash
 - sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
@@ -123,15 +130,15 @@ npm i -g npm@latest pm2 nodemon license gitignore dockerignore typescript commit
 
 ```
 
-11. Install softwares:
+12. Install softwares:
 
 - [vscode](https://snapcraft.io/code)
 - [Postman](https://snapcraft.io/postman)
 - [Brave](https://snapcraft.io/brave)
 - [Telegram](https://snapcraft.io/telegram-desktop)
 - [Slack](https://snapcraft.io/slack)
+- [MySQL Workbeanch](https://dev.mysql.com/downloads/workbench/)
 - [Robo3t](https://snapcraft.io/robo3t-snap)
-- [Spotify](https://snapcraft.io/spotify)
 - [Spotify](https://snapcraft.io/spotify)
 - [Sublime Text](https://snapcraft.io/sublime-text)
 - [LibreOffice](https://snapcraft.io/libreoffice)
