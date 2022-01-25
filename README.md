@@ -119,7 +119,7 @@ npm i -g npm@latest pm2 nodemon license gitignore dockerignore typescript commit
 
 ```
 
-12. Install PostgreSQL
+11. Install PostgreSQL
 
 ```bash
 - sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
@@ -130,7 +130,16 @@ npm i -g npm@latest pm2 nodemon license gitignore dockerignore typescript commit
 
 ```
 
-12. Install softwares:
+12. Install Go:
+- Download: [GoLang](https://go.dev/dl/go1.17.6.linux-amd64.tar.gz)
+- After installation:
+```bash
+- rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.6.linux-amd64.tar.gz
+- export PATH=$PATH:/usr/local/go/bin
+- go version
+```
+
+13. Install softwares:
 
 - [vscode](https://snapcraft.io/code)
 - [Postman](https://snapcraft.io/postman)
