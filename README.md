@@ -36,7 +36,8 @@ sudo apt-get install ubuntu-restricted-extras gnome-tweaks -y
 
 ```bash
 - cd /tmp
-- curl -o git.tar.gz https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.34.1.tar.xz
+- curl -o git.tar.gz https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.35.0.tar.gz
+- tar -zxf git.tar.gz
 - cd git-2.33.1/
 - sudo make prefix=/usr/local all && sudo make prefix=/usr/local install
 
