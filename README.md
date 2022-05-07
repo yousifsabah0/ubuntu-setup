@@ -36,21 +36,36 @@ sudo apt-get install ubuntu-restricted-extras gnome-tweaks -y
 
 ```bash
 - cd /tmp
-- curl -o git.tar.gz https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.35.0.tar.gz
+- curl -o git.tar.gz https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.36.1.tar.gz
 - tar -zxf git.tar.gz
-- cd git-2.33.1/
+- cd git-2.36.1/
 - sudo make prefix=/usr/local all && sudo make prefix=/usr/local install
 
 # Configure git
 - git config --global user.name "Your name"
 - git config --global user.email "Your email"
-- git config credential.helper store
+- git config --global credential.helper store
+- git config --global init.defaultBranch main
 ```
 
 6. Install Node.js
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+```
+
+- Ubuntu 22.04
+```bash
+- sudo curl -LO https://nodejs.org/dist/v18.0.0/node-v18.1.0-linux-x64.tar.xz
+- sudo tar -xvf node-v18.0.0-linux-x64.tar.xz
+- sudo cp -r node-v18.0.0-linux-x64/{bin,include,lib,share} /usr/
+- node --version
+```
+
+- Enable yarn
+```bash
+- corepack enable
+- yarn --version
 ```
 
 Optional install global packages and update npm.
@@ -141,19 +156,6 @@ npm i -g npm@latest pm2 nodemon license gitignore dockerignore typescript commit
 - source ~/.profile
 - go version
 ```
-
-13. Install softwares:
-
-- [vscode](https://snapcraft.io/code)
-- [Postman](https://snapcraft.io/postman)
-- [Brave](https://snapcraft.io/brave)
-- [Telegram](https://snapcraft.io/telegram-desktop)
-- [Slack](https://snapcraft.io/slack)
-- [MySQL Workbeanch](https://dev.mysql.com/downloads/workbench/)
-- [Robo3t](https://snapcraft.io/robo3t-snap)
-- [Spotify](https://snapcraft.io/spotify)
-- [Sublime Text](https://snapcraft.io/sublime-text)
-- [LibreOffice](https://snapcraft.io/libreoffice)
 
 Additional:
 
