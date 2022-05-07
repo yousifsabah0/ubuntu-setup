@@ -56,9 +56,10 @@ curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 
 - Ubuntu 22.04
 ```bash
-- sudo curl -LO https://nodejs.org/dist/v18.0.0/node-v18.1.0-linux-x64.tar.xz
-- sudo tar -xvf node-v18.0.0-linux-x64.tar.xz
-- sudo cp -r node-v18.0.0-linux-x64/{bin,include,lib,share} /usr/
+- cd /tmp
+- sudo curl -LO https://nodejs.org/dist/v18.1.0/node-v18.1.0-linux-x64.tar.xz
+- sudo tar -xvf node-v18.1.0-linux-x64.tar.xz
+- sudo cp -r node-v18.1.0-linux-x64/{bin,include,lib,share} /usr/
 - node --version
 ```
 
